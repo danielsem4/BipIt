@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Base RTL ─────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  direction: rtl;
+  scroll-behavior: smooth;
+}
+
+/* Original body font stack: "Alef Hebrew", "Helvetica Neue", Helvetica, Arial, sans-serif */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Alef Hebrew', Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;  /* original: line-height 20px */
+  background: #fff;
+  color: #333;
+  cursor: default;
+}
+
+/* Original: h1-h3 use Fjalla One */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', 'Alef Hebrew', sans-serif;
+  font-weight: 400;
+}
+
+/* Original: links in nav are #F2F2F2 with no underline */
+a {
+  text-decoration: none;
+}
+
+/* Remove browser default margin on p/ul */
+p { margin: 0; }
+ul { margin: 0; padding: 0; }

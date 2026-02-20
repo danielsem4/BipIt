@@ -1,28 +1,30 @@
 import type { DriveFeature, DriveOption } from '../types';
 
+const BASE = 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02';
+
 const DRIVE_OPTIONS: DriveOption[] = [
-  { image: '/images/option1.png', alt: 'הפעלה על ידי חיישן תנועה' },
-  { image: '/images/option2.png', alt: 'הפעלה על ידי חיבור Bluetooth' },
-  { image: '/images/option3.png', alt: 'הפעלה על ידי חיבור חשמל' },
+  { image: `${BASE}/option1.png`, alt: 'הפעלה על ידי חיישן תנועה' },
+  { image: `${BASE}/option2.png`, alt: 'הפעלה על ידי חיבור Bluetooth' },
+  { image: `${BASE}/option3.png`, alt: 'הפעלה על ידי חיבור חשמל' },
 ];
 
 const DRIVE_FEATURES: DriveFeature[] = [
   {
-    image: '/images/type3.png',
+    image: `${BASE}/type3.png`,
     alt: 'אייקון הקראת שיחות',
     title: 'הקראת שיחות',
     description:
       'במצב נהיגה Bip it מקריאה את שם המתקשר בכל שיחה נכנסת ונותנת אפשרות למענה בהוראה קולית',
   },
   {
-    image: '/images/type2.png',
+    image: `${BASE}/type2.png`,
     alt: 'אייקון הקראת הודעות',
     title: 'הקראת הודעות',
     description:
       'מיד עם קבלת הודעת טקסט או ווטסאפ Bip it מקריאה אותה ונותנת אפשרות להכתיב תשובה בחזרה',
   },
   {
-    image: '/images/type1.png',
+    image: `${BASE}/type1.png`,
     alt: 'אייקון הפעלה קולית',
     title: 'הפעלה קולית',
     description:

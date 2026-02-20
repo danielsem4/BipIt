@@ -1,8 +1,10 @@
 import type { Review } from '../types';
 
+const BASE = 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02';
+
 const REVIEWS: Review[] = [
   {
-    image: '/images/review4.png',
+    image: `${BASE}/review4.png`,
     alt: 'לוגו אתר גאדג׳טי',
     title: 'אתר גאדג׳טי',
     description: 'מדריך משתמש מלא ומפורט לשימוש באפליקציה באתר גאדג׳טי',
@@ -10,14 +12,14 @@ const REVIEWS: Review[] = [
     imageStyle: { paddingTop: '51px' },
   },
   {
-    image: '/images/review3.png',
+    image: `${BASE}/review3.png`,
     alt: 'לוגו כלכליסט',
     title: 'כלכליסט',
     description: '״מדובר באחת האפליקציות היותר שימושיות וטובות מסוגה״',
     link: 'http://www.calcalist.co.il/internet/articles/0,7340,L-3657999,00.html',
   },
   {
-    image: '/images/review2.png',
+    image: `${BASE}/review2.png`,
     alt: 'לוגו תכנית אורלי וגיא',
     title: 'אורלי וגיא',
     description: 'הדגמה חייה והסיפור שמאחורי פיתוח האפליקציה בתכנית הבוקר של אורלי וגיא',
@@ -25,7 +27,7 @@ const REVIEWS: Review[] = [
     imageStyle: { paddingTop: '37px' },
   },
   {
-    image: '/images/review1.png',
+    image: `${BASE}/review1.png`,
     alt: 'לוגו מהדורה מרכזית ערוץ 10',
     title: 'מהדורה מרכזית ערוץ 10',
     description: 'נסיעת מבחן עם האפליקציה בכתבה של אביב פרנקל למהדורה המרכזית של ערוץ 10',
@@ -33,7 +35,7 @@ const REVIEWS: Review[] = [
     imageStyle: { paddingTop: '54px' },
   },
   {
-    image: '/images/review5.png',
+    image: `${BASE}/review5.png`,
     alt: 'לוגו ישראל היום',
     title: 'ישראל היום',
     description: 'פקודה קולית תמנע תאונה',
@@ -41,7 +43,7 @@ const REVIEWS: Review[] = [
     imageStyle: { paddingTop: '51px' },
   },
   {
-    image: '/images/review7.png',
+    image: `${BASE}/review7.png`,
     alt: 'לוגו חורים ברשת',
     title: 'חורים ברשת',
     description:
@@ -50,7 +52,7 @@ const REVIEWS: Review[] = [
     imageStyle: { marginTop: '-24px' },
   },
   {
-    image: '/images/review6.png',
+    image: `${BASE}/review6.png`,
     alt: 'לוגו ערוץ 2',
     title: 'ערוץ 2',
     description: '״התשובה הציונית לסירי״ כתבה מאת עידו סולומון בתכנית שש עם עודד בן עמי',
@@ -58,7 +60,7 @@ const REVIEWS: Review[] = [
     imageStyle: { paddingTop: '37px', width: '55px' },
   },
   {
-    image: '/images/review8.png',
+    image: `${BASE}/review8.png`,
     alt: 'לוגו Ynet',
     title: 'Ynet',
     description: 'אפליקציית נהיגה שינתה את חייו של נער עיוור',

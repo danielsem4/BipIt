@@ -55,7 +55,7 @@ export default function InfoSection() {
           {/* App image */}
           <div className="flex-shrink-0 flex justify-center">
             <img
-              src="/images/info.png"
+              src="https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/info.png"
               alt="הדגמת שימוש באפליקציית Bip it"
               className="w-56 md:w-72 object-contain"
             />

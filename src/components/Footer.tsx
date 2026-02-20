@@ -76,7 +76,7 @@ export default function Footer({ onDownload }: FooterProps) {
                   aria-label="עמוד הפייסבוק של Bip it (נפתח בחלון חדש)"
                 >
                   <img
-                    src="/images/fblogo.png"
+                    src="https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/fblogo.png"
                     alt=""
                     aria-hidden="true"
                     style={{ width: '30px' }}
@@ -97,16 +97,21 @@ export default function Footer({ onDownload }: FooterProps) {
               href="http://www.syntax.org.il"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-bold border-b border-white inline-block mb-4 cursor-pointer transition-opacity hover:opacity-75"
-              style={{
-                color: 'white',
-                fontSize: '14px',
-                lineHeight: '33px',
-                width: '220px',
-                textDecoration: 'none',
-              }}
+              className="inline-flex flex-col items-end gap-2 mb-4 transition-opacity hover:opacity-75"
+              style={{ textDecoration: 'none' }}
+              aria-label="לאתר מכללת SYNTAX להכשרת מפתחי אפליקציות (נפתח בחלון חדש)"
             >
-              לאתר מכללת SYNTAX להכשרת מפתחי אפליקציות
+              <img
+                src="https://syntax.org.il/wp-content/uploads/2016/08/logofinal.png"
+                alt="מכללת SYNTAX"
+                style={{ height: '40px', objectFit: 'contain' }}
+              />
+              <span
+                className="font-bold border-b border-white"
+                style={{ color: 'white', fontSize: '13px', lineHeight: '24px' }}
+              >
+                להכשרת מפתחי אפליקציות
+              </span>
             </a>
 
             <div>

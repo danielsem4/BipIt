@@ -86,12 +86,20 @@ export default function Header() {
           aria-controls="mobile-menu"
           onClick={() => setMobileOpen((prev) => !prev)}
         >
-          <img
-            src="/images/mobile-menu-icon.png"
-            alt=""
-            aria-hidden="true"
-            className="w-6 h-6 opacity-90"
-          />
+          {mobileOpen ? (
+            /* X icon */
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <line x1="4" y1="4" x2="20" y2="20" stroke="#F2F2F2" strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="20" y1="4" x2="4" y2="20" stroke="#F2F2F2" strokeWidth="2.5" strokeLinecap="round" />
+            </svg>
+          ) : (
+            /* Hamburger icon */
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <line x1="3" y1="6"  x2="21" y2="6"  stroke="#F2F2F2" strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="3" y1="12" x2="21" y2="12" stroke="#F2F2F2" strokeWidth="2.5" strokeLinecap="round" />
+              <line x1="3" y1="18" x2="21" y2="18" stroke="#F2F2F2" strokeWidth="2.5" strokeLinecap="round" />
+            </svg>
+          )}
         </button>
       </div>
 
@@ -105,13 +113,13 @@ export default function Header() {
         }`}
         style={{ backgroundColor: '#29B7C9' }}
       >
-        <ul className="flex flex-col pt-5 pb-3 list-none m-0 px-0" role="list">
+        <ul className="flex flex-col py-4 list-none m-0 px-0" role="list">
           {NAV_ITEMS.map((item) => (
             <li key={item.label}>
               <a
                 href={item.href}
                 onClick={(e) => handleNavClick(e, item.href)}
-                className="block py-3 text-[22px] font-semibold text-right pr-[22%] border-b border-white last:border-0 transition-colors hover:text-brand-dark-bg"
+                className="block py-4 text-[22px] font-semibold text-center border-b border-white/30 last:border-0 transition-colors hover:text-brand-dark-bg"
                 style={{ color: 'white' }}
               >
                 {item.label}

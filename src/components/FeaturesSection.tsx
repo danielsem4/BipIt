@@ -49,12 +49,11 @@ export default function FeaturesSection() {
           תכונות האפליקציה
         </h2>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center">
           {FEATURES.map((feature) => (
             <article
               key={feature.title}
-              className="flex flex-col items-center text-center"
-              style={{ width: '240px' }}
+              className="flex flex-col items-center text-center w-full max-w-xs"
               aria-label={feature.title}
             >
               <img

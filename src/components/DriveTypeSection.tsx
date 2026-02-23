@@ -70,18 +70,18 @@ export default function DriveTypeSection() {
           מצב נהיגה פועל באמצעות
         </p>
 
-        {/* Activation options — original: images float left with "או" between */}
+        {/* Activation options — one row, no wrapping */}
         <div
-          className="flex flex-wrap items-center justify-center gap-2 mt-8"
+          className="flex flex-nowrap items-center justify-center gap-2 mt-8"
           role="list"
           aria-label="אפשרויות הפעלת מצב נהיגה"
         >
           {DRIVE_OPTIONS.map((option, index) => (
-            <div key={option.alt} className="flex items-center gap-2" role="listitem">
+            <div key={option.alt} className="flex items-center gap-2 shrink-0" role="listitem">
               <img
                 src={option.image}
                 alt={option.alt}
-                className="h-16 object-contain"
+                className="h-20 w-auto object-contain"
                 style={{ marginTop: index === 0 ? '10px' : '0' }}
               />
               {index < DRIVE_OPTIONS.length - 1 && (
@@ -103,12 +103,19 @@ export default function DriveTypeSection() {
          *   text-align center, padding-top 50px
          * Inner <div> has color #4d351d for "במצב נהיגה"
          */}
-        <div
-          className="font-bold text-center mt-10"
-          style={{ fontSize: '26px', color: 'white' }}
-        >
-          <div style={{ color: '#4d351d', marginBottom: '8px' }}>במצב נהיגה</div>
-          <p className="m-0">כל שירותי הרקע פעילים והוא מאפשר</p>
+        <div className="text-center mt-10">
+          <div
+            className="font-bold"
+            style={{ fontSize: '45px', color: '#4d351d' }}
+          >
+            במצב נהיגה
+          </div>
+          <p
+            className="font-bold"
+            style={{ fontSize: '26px', color: 'white', marginTop: '12px' }}
+          >
+            כל שירותי הרקע פעילים והוא מאפשר
+          </p>
         </div>
 
         {/* Separation line — original: background #4d351d, height 1px */}
@@ -131,7 +138,7 @@ export default function DriveTypeSection() {
               <img
                 src={feature.image}
                 alt={feature.alt}
-                className="h-16 object-contain mb-3"
+                className="h-24 object-contain mb-3"
               />
 
               {/*

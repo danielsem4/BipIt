@@ -90,11 +90,11 @@ function ReviewCard({ review }: ReviewCardProps) {
       style={{ width: '240px', minHeight: '290px' }}
     >
       {/* Image area */}
-      <div className="h-28 flex items-end justify-center w-full">
+      <div className="h-32 flex items-end justify-center w-full">
         <img
           src={review.image}
           alt={review.alt}
-          className="max-h-24 object-contain"
+          className="max-h-28 object-contain"
           style={review.imageStyle}
         />
       </div>

@@ -59,7 +59,7 @@ export default function FeaturesSection() {
               <img
                 src={feature.image}
                 alt={feature.alt}
-                className="h-16 object-contain mb-2"
+                className="h-24 object-contain mb-2"
               />
 
               {/* .featureBoxTitle: font-size 30px, font-weight 700, color black */}

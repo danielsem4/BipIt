@@ -54,7 +54,7 @@ export default function Header() {
           className="focus:outline-none focus:ring-2 focus:ring-brand-teal rounded pt-2"
         >
           <img
-            src="https://web.archive.org/web/20170728023338im_/http://pzlapps.com/wp-content/uploads/2017/02/mainLogo.png"
+            src="/images/mainLogo.png"
             alt="BipIt לוגו"
             className="h-10 w-auto"
           />

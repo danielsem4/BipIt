@@ -1,6 +1,6 @@
 import type { Review } from '../types';
 
-const BASE = 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02';
+const BASE = '/images';
 
 const REVIEWS: Review[] = [
   {

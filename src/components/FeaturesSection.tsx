@@ -2,28 +2,28 @@ import type { Feature } from '../types';
 
 const FEATURES: Feature[] = [
   {
-    image: 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/feature4.png',
+    image: '/images/feature4.png',
     alt: 'אייקון ניווט קולי',
     title: 'ניווט קולי',
     description:
       'מאפשרת לך להגיע לכל יעד ללא צורך בהקלדות מיותרות בזמן נהיגה. פשוט אמור לאן והיא תפתח עבורך את ווייז או כל תכנת ניווט אחרת',
   },
   {
-    image: 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/feature3.png',
+    image: '/images/feature3.png',
     alt: 'אייקון תזכורות קוליות',
     title: 'תזכורות קוליות',
     description:
       'מאפשרת לך לקבוע פגישות, תזכורת ואפילו להתעורר לכל מוזיקה שתבחר. פשוט אמור מה ומתי והיא תבצע את כל השאר',
   },
   {
-    image: 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/feature2.png',
+    image: '/images/feature2.png',
     alt: 'אייקון ניגון מוזיקה',
     title: 'ניגון מוזיקה',
     description:
       'מאפשרת לך לנגן את כל שתרצה מספריית המוזיקה שבמכשירך או שירים מהיוטיוב בפקודה קולית',
   },
   {
-    image: 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/feature1.png',
+    image: '/images/feature1.png',
     alt: 'אייקון שיחות והודעות',
     title: 'שיחות והודעות',
     description:

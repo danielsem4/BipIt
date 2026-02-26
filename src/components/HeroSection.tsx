@@ -20,7 +20,7 @@ export default function HeroSection({ onDownload, onWatchVideo }: HeroSectionPro
         {/* Phone mockup — first in DOM = right side in RTL */}
         <div className="flex-shrink-0 flex items-center justify-center w-full md:w-auto">
           <img
-            src="https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/coverImage.png"
+            src="/images/coverImage.png"
             alt="צילום מסך של אפליקציית Bip it"
             className="w-64 sm:w-72 md:w-96"
           />

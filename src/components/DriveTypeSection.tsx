@@ -1,6 +1,6 @@
 import type { DriveFeature, DriveOption } from '../types';
 
-const BASE = 'https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02';
+const BASE = '/images';
 
 const DRIVE_OPTIONS: DriveOption[] = [
   { image: `${BASE}/option1.png`, alt: 'הפעלה על ידי חיישן תנועה' },

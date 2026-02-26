@@ -76,7 +76,7 @@ export default function Footer({ onDownload }: FooterProps) {
                   aria-label="עמוד הפייסבוק של Bip it (נפתח בחלון חדש)"
                 >
                   <img
-                    src="https://web.archive.org/web/20170824143159im_/http://pzlapps.com/wp-content/uploads/2017/02/fblogo.png"
+                    src="/images/fblogo.png"
                     alt=""
                     aria-hidden="true"
                     style={{ width: '30px' }}

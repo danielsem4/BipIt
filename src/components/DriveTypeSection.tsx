@@ -53,8 +53,8 @@ export default function DriveTypeSection() {
          */}
         <h2
           id="drive-type-heading"
-          className="font-bold text-center"
-          style={{ fontSize: '45px', color: '#4d351d', paddingTop: '20px' }}
+          className="font-bold text-center text-4xl md:text-5xl"
+          style={{ color: '#4d351d', paddingTop: '20px' }}
         >
           מצב נהיגה
         </h2>
@@ -64,20 +64,20 @@ export default function DriveTypeSection() {
          *   text-align center, padding-top 25px
          */}
         <p
-          className="font-bold text-center"
-          style={{ fontSize: '26px', color: 'white', paddingTop: '20px' }}
+          className="font-bold text-center text-xl md:text-2xl"
+          style={{ color: 'white', paddingTop: '20px' }}
         >
           מצב נהיגה פועל באמצעות
         </p>
 
-        {/* Activation options — one row, no wrapping */}
+        {/* Activation options */}
         <div
-          className="flex flex-nowrap items-center justify-center gap-2 mt-8"
+          className="flex flex-wrap items-center justify-center gap-2 mt-8"
           role="list"
           aria-label="אפשרויות הפעלת מצב נהיגה"
         >
           {DRIVE_OPTIONS.map((option, index) => (
-            <div key={option.alt} className="flex items-center gap-2 shrink-0" role="listitem">
+            <div key={option.alt} className="flex items-center gap-2" role="listitem">
               <img
                 src={option.image}
                 alt={option.alt}
@@ -105,14 +105,14 @@ export default function DriveTypeSection() {
          */}
         <div className="text-center mt-10">
           <div
-            className="font-bold"
-            style={{ fontSize: '45px', color: '#4d351d' }}
+            className="font-bold text-4xl md:text-5xl"
+            style={{ color: '#4d351d' }}
           >
             במצב נהיגה
           </div>
           <p
-            className="font-bold"
-            style={{ fontSize: '26px', color: 'white', marginTop: '12px' }}
+            className="font-bold text-xl md:text-2xl"
+            style={{ color: 'white', marginTop: '12px' }}
           >
             כל שירותי הרקע פעילים והוא מאפשר
           </p>
@@ -127,12 +127,11 @@ export default function DriveTypeSection() {
         />
 
         {/* Drive features */}
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {DRIVE_FEATURES.map((feature) => (
             <article
               key={feature.title}
               className="flex flex-col items-center text-center"
-              style={{ width: '270px' }}
               aria-label={feature.title}
             >
               <img
@@ -147,9 +146,8 @@ export default function DriveTypeSection() {
                *   padding-top 20px, padding-bottom 23px
                */}
               <h3
-                className="font-bold"
+                className="font-bold text-xl md:text-2xl"
                 style={{
-                  fontSize: '26px',
                   color: 'white',
                   paddingTop: '20px',
                   paddingBottom: '16px',
@@ -158,13 +156,9 @@ export default function DriveTypeSection() {
                 {feature.title}
               </h3>
 
-              {/*
-               * .driveTypeSection .featureBoxDescription:
-               *   font-size 20px, font-weight 200, color white, text-align center
-               */}
               <p
-                className="font-light text-center"
-                style={{ fontSize: '17px', color: 'white' }}
+                className="font-light text-center text-base md:text-lg"
+                style={{ color: 'white' }}
               >
                 {feature.description}
               </p>
